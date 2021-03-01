@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>bootstrap-confirmation</artifactId>
-    <version>2.3.1-SNAPSHOT</version>
+    <version>2.3.1</version>
     <name>bootstrap-confirmation</name>
     <description>WebJar for bootstrap-confirmation</description>
     <url>https://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>https://github.com/webjars/bootstrap-confirmation</url>
         <connection>scm:git:https://github.com/webjars/bootstrap-confirmation.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/bootstrap-confirmation.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>bootstrap-confirmation-2.3.1</tag>
     </scm>
 
     <properties>
@@ -72,7 +72,7 @@
                                 <get src="https://github.com/mistic100/bootstrap-confirmation/archive/v${version.unsnapshot}.zip" dest="${project.build.directory}/${project.artifactId}.zip" />
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <move todir="${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${version.unsnapshot}">
-                                    <fileset dir="${project.build.directory}/Bootstrap-Confirmation-${version.unsnapshot}" includes="bootstrap-confirmation*.js"/>
+                                    <fileset dir="${project.build.directory}/Bootstrap-Confirmation-${version.unsnapshot}" includes="bootstrap-confirmation*.js" />
                                 </move>
                             </target>
                         </configuration>
